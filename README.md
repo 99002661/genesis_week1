@@ -1,1 +1,1 @@
-# genesis_week1
+This repo will contain the submission for week 1 of GENESIS program only.
