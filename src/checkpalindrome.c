@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "checkpalindrome.h"
 
 void checkpalindrome(char str[]) 

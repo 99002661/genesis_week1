@@ -7,7 +7,7 @@ src/missingnoinarray.c\
 src/minmaxofarray.c\
 main.c
 
-INC = -Iinc
+INC = -Iinc\
 
 PROJECT_NAME = letsdoit.exe
 
