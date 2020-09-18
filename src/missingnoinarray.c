@@ -1,4 +1,6 @@
-/* getMissingNo takes array and size of array as arguments*/
+#include <stdio.h>
+#include "missingnoinarray.h"
+
 int getMissingNo(int a[], int n)
 {
     int i, total;

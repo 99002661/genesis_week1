@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "largestinarray.h"
+
 int largest(int arr[], int n) 
 { 
     int i; 

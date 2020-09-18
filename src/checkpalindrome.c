@@ -1,4 +1,6 @@
-// A function to check if a string str is palindrome 
+#include <stdio.h>
+#include "checkpalindrome.h"
+
 void isPalindrome(char str[]) 
 { 
     int l = 0; 
