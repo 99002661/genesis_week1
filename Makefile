@@ -1,8 +1,8 @@
 SRC = src/arraysum.c\
 src/checkarmstrong.c\
-src/checkpalindrome.c\
 src/checkprime.c\
 src/largestinarray.c\
+src/checkperfect.c\
 src/missingnoinarray.c\
 main.c
 
