@@ -1,6 +1,5 @@
-
 /* structure is used to return two values from minMax() */
-#include<stdio.h> 
+#include <stdio.h> 
 struct pair  
 { 
   int min; 
