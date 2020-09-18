@@ -2,9 +2,9 @@
 # include <string.h> 
 # include <stdlib.h> 
   
-/* Function checks if passed strings (str1 and str2) 
+/* Fnction checks if passed strings (str1 and str2) 
    are rotations of each other */
-int areRotations(char *str1, char *str2) 
+int Rotations(char *str1, char *str2) 
 { 
   int size1   = strlen(str1); 
   int size2   = strlen(str2); 
