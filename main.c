@@ -15,3 +15,10 @@ void checkpalindrome(char str[]);
 int largestinarray(int arr[], int n);
 int checkarmstrong(int num);
 int checkprime(int n);
+
+int main()
+{
+    checkarmstrong(153);
+
+    return 0;
+}
