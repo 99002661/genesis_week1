@@ -41,11 +41,30 @@ void testarmstrong(void)
 }*/
 
 //NEON NUMBER//
-void testneon(void)
+/*void testneon(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(0, checkneon(111), "111");
   TEST_ASSERT_EQUAL_MESSAGE(1, checkneon(9), "9");
+}*/
+//PERFECT NUMBER//
+void testperfect(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkperfect(496), "496");
+  TEST_ASSERT_EQUAL_MESSAGE(0, checkperfect(400), "400");
 }
+//PRIME NUMBER//
+void testprime(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkprime(17), "17");
+  TEST_ASSERT_EQUAL_MESSAGE(0, checkprime(400), "400");
+}
+//DECI TO BIN//
+void testdecitobin(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(10001, decitobin(17), "17");
+  TEST_ASSERT_EQUAL_MESSAGE(10011100, decitobin(156), "156");
+}
+
 
 int testMain(void)
 {
@@ -55,7 +74,10 @@ int testMain(void)
   RUN_TEST(testbintodeci);
   RUN_TEST(testarmstrong);
 //  RUN_TEST(testmagic);
-  RUN_TEST(testneon);
+//  RUN_TEST(testneon);
+  RUN_TEST(testperfect);
+  RUN_TEST(testprime);
+  RUN_TEST(testdecitobin);
 
   return UNITY_END();
 }
