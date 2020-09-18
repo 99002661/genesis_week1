@@ -8,6 +8,7 @@ src/missingnoinarray.c\
 src/decitobin.c\
 src/bintodeci.c\
 src/checkmagic.c\
+src/checkneon.c\
 main.c
 
 INC = -Iinc\

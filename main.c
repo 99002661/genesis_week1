@@ -12,6 +12,7 @@ int arraysum(int arr[], int n);
 int bintodeci(long long n);
 int checkarmstrong(int num);
 int checkmagic(int number);
+int checkneon(int num);
 int checkperfect(int num);
 int checkprime(int n);
 long long decitobin(int n);
@@ -27,6 +28,7 @@ int main()
     bintodeci(11111111);
     checkarmstrong(153);
     checkmagic(34);
+    checkneon(9);
     checkperfect(23);
     checkprime(17);
     decitobin(145);
