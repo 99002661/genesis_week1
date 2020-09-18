@@ -17,7 +17,6 @@ int checkarmstrong(int num)
       result += pow(remainder, n);
    }
 
-   // condition for Armstrong number
    if (round(result) == num)
       flag = 1;
    else

@@ -9,24 +9,29 @@
 #include "missingnoinarray.h"
 
 int arraysum(int arr[], int n);
-int getmissingno(int a[], int n);
-void checkpalindrome(char str[]); 
-int largestinarray(int arr[], int n);
+int bintodeci(long long n);
 int checkarmstrong(int num);
+int checkmagic(int number);
+int checkperfect(int num);
 int checkprime(int n);
+long long decitobin(int n);
+int largestinarray(int arr[], int n);
+int getmissingno(int a[], int n);
+int smallestinarray(int arr[], int n);
+
 
 int main()
-{
-    arraysum([1,2,3], 3);
+{   int arr = [1,2,4]
+    arraysum(arr, 3);
     bintodeci(11111111);
     checkarmstrong(153);
     checkmagic(34);
     checkperfect(23);
     checkprime(17);
     decitobin(145);
-    /*largestinarray([1,2,3], 3);
-    missingnoinarray([1,3], 2);
-    smallestinarray([1,2,3], 3);*/
+    largestinarray(arr, 3);
+    missingnoinarray(arr, 3);
+    smallestinarray(arr, 3);
 
     return 0;
 }

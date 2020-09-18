@@ -5,6 +5,9 @@ src/largestinarray.c\
 src/smallestinarray.c\
 src/checkperfect.c\
 src/missingnoinarray.c\
+src/decitobin.c\
+src/bintodeci.c\
+src/checkmagic.c\
 main.c
 
 INC = -Iinc\
