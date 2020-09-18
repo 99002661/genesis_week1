@@ -2,6 +2,7 @@ SRC = src/arraysum.c\
 src/checkarmstrong.c\
 src/checkprime.c\
 src/largestinarray.c\
+src/smallestinarray.c\
 src/checkperfect.c\
 src/missingnoinarray.c\
 main.c
