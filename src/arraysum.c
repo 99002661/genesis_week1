@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "arraysum.h"
 
 int arraysum(int arr[], int n) 

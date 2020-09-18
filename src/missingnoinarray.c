@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "missingnoinarray.h"
 
 int getmissingno(int a[], int n)

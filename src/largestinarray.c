@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "largestinarray.h"
 
 int largestinarray(int arr[], int n) 
