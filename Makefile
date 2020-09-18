@@ -9,9 +9,12 @@ src/decitobin.c\
 src/bintodeci.c\
 src/checkmagic.c\
 src/checkneon.c\
+tests/test_main.c\
+unity/unity.c\
 main.c
 
 INC = -Iinc\
+-Iunity\
 
 PROJECT_NAME = letsdoit.o
 

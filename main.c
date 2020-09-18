@@ -3,10 +3,16 @@
 #include <stdlib.h>
 #include <string.h>
 #include "arraysum.h"
+#include "bintodeci.h"
 #include "checkarmstrong.h"
+#include "checkmagic.h"
+#include "checkneon.h"
+#include "checkperfect.h"
 #include "checkprime.h"
+#include "decitobin.h"
 #include "largestinarray.h"
 #include "missingnoinarray.h"
+#include "smallestinarray.h"
 
 int arraysum(int arr[], int n);
 int bintodeci(long long n);
