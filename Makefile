@@ -3,7 +3,6 @@ src/checkarmstrong.c\
 src/checkpalindrome.c\
 src/checkprime.c\
 src/largestinarray.c\
-src/missingnoinarray.c\
 src/minmaxofarray.c\
 main.c
 
