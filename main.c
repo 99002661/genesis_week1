@@ -21,7 +21,8 @@ int smallestinarray(int arr[], int n);
 
 
 int main()
-{   int arr = [1,2,4]
+{   
+    int arr[] = {1,2,4};
     arraysum(arr, 3);
     bintodeci(11111111);
     checkarmstrong(153);
