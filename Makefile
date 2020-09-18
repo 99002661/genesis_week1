@@ -8,7 +8,7 @@ main.c
 
 INC = -Iinc\
 
-PROJECT_NAME = letsdoit.exe
+PROJECT_NAME = letsdoit.o
 
 $(PROJECT_NAME): $(SRC)
 
