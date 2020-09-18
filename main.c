@@ -13,6 +13,7 @@
 #include "largestinarray.h"
 #include "missingnoinarray.h"
 #include "smallestinarray.h"
+#include "test_main.h"
 
 int arraysum(int arr[], int n);
 int bintodeci(long long n);
@@ -29,6 +30,7 @@ int smallestinarray(int arr[], int n);
 
 int main()
 {   
+    /*
     int arr[] = {1,2,4};
     arraysum(arr, 3);
     bintodeci(11111111);
@@ -41,6 +43,8 @@ int main()
     largestinarray(arr, 3);
     missingnoinarray(arr, 3);
     smallestinarray(arr, 3);
+    */
+   testMain();
 
     return 0;
 }

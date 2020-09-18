@@ -15,6 +15,7 @@ main.c
 
 INC = -Iinc\
 -Iunity\
+-Itests\
 
 PROJECT_NAME = letsdoit.o
 
