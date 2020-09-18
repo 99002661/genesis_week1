@@ -3,7 +3,7 @@ src/checkarmstrong.c\
 src/checkpalindrome.c\
 src/checkprime.c\
 src/largestinarray.c\
-src/minmaxofarray.c\
+src/missingnoinarray.c\
 main.c
 
 INC = -Iinc\
