@@ -34,18 +34,18 @@ void testarmstrong(void)
   TEST_ASSERT_EQUAL_MESSAGE(0, checkarmstrong(200), "200");
 }
 //MAGIC NUMBER//
-/*void testmagic(void)
+void testmagic(void)
 {
-  TEST_ASSERT_EQUAL_MESSAGE(1, checkmagic(1234), "1234");
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkmagic(52), "52");
   TEST_ASSERT_EQUAL_MESSAGE(0, checkmagic(12345), "12345");
-}*/
+}
 
 //NEON NUMBER//
-/*void testneon(void)
+void testneon(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(0, checkneon(111), "111");
   TEST_ASSERT_EQUAL_MESSAGE(1, checkneon(9), "9");
-}*/
+}
 //PERFECT NUMBER//
 void testperfect(void)
 {
@@ -64,6 +64,19 @@ void testdecitobin(void)
   TEST_ASSERT_EQUAL_MESSAGE(10001, decitobin(17), "17");
   TEST_ASSERT_EQUAL_MESSAGE(10011100, decitobin(156), "156");
 }
+//LARGEST IN ARRAY//
+void testlargestinarray(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(3, largestinarray(arr_1, 3), "[1,2,3], 3");
+  TEST_ASSERT_EQUAL_MESSAGE(3, largestinarray(arr_2, 2), "[1,3], 2");
+}
+//MISSING IN ARRAY//
+void testmissing(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(4, missingnoinarray(arr_1, 3), "[1,2,3], 3");
+  TEST_ASSERT_EQUAL_MESSAGE(2, missingnoinarray(arr_2, 2), "[1,3], 2");
+}
+//MISSING IN ARRAY//
 
 
 int testMain(void)
@@ -73,11 +86,13 @@ int testMain(void)
   RUN_TEST(testarraysum);
   RUN_TEST(testbintodeci);
   RUN_TEST(testarmstrong);
-//  RUN_TEST(testmagic);
-//  RUN_TEST(testneon);
+  RUN_TEST(testmagic);
+  RUN_TEST(testneon);
   RUN_TEST(testperfect);
   RUN_TEST(testprime);
   RUN_TEST(testdecitobin);
+  RUN_TEST(testlargestinarray);
+  RUN_TEST(testmissing);
 
   return UNITY_END();
 }
