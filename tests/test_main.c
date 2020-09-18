@@ -32,11 +32,13 @@ void testarmstrong(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(1, checkarmstrong(153), "153");
   TEST_ASSERT_EQUAL_MESSAGE(0, checkarmstrong(200), "200");
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkarmstrong(0), "0");
+  TEST_ASSERT_EQUAL_MESSAGE(-1, checkarmstrong(-21), "-21");
 }
 //MAGIC NUMBER//
 void testmagic(void)
 {
-  TEST_ASSERT_EQUAL_MESSAGE(1, checkmagic(52), "52");
+  TEST_ASSERT_EQUAL_MESSAGE(0, checkmagic(52), "52");
   TEST_ASSERT_EQUAL_MESSAGE(0, checkmagic(12345), "12345");
 }
 
@@ -55,8 +57,12 @@ void testperfect(void)
 //PRIME NUMBER//
 void testprime(void)
 {
-  TEST_ASSERT_EQUAL_MESSAGE(1, checkprime(17), "17");
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkprime(23), "23");
   TEST_ASSERT_EQUAL_MESSAGE(0, checkprime(400), "400");
+  TEST_ASSERT_EQUAL_MESSAGE(-1, checkprime(-1), "-1");
+  TEST_ASSERT_EQUAL_MESSAGE(-1, checkprime(0), "0");
+  TEST_ASSERT_EQUAL_MESSAGE(3, checkprime(1), "2");
+
 }
 //DECI TO BIN//
 void testdecitobin(void)
@@ -76,7 +82,12 @@ void testmissing(void)
   TEST_ASSERT_EQUAL_MESSAGE(4, missingnoinarray(arr_1, 3), "[1,2,3], 3");
   TEST_ASSERT_EQUAL_MESSAGE(2, missingnoinarray(arr_2, 2), "[1,3], 2");
 }
-//MISSING IN ARRAY//
+//SMALLEST IN ARRAY//
+void testsmallest(void)
+{
+  TEST_ASSERT_EQUAL_MESSAGE(1, smallestinarray(arr_1, 3), "[1,2,3], 3");
+  TEST_ASSERT_EQUAL_MESSAGE(1, smallestinarray(arr_2, 2), "[1,3], 2");
+}
 
 
 int testMain(void)
@@ -93,6 +104,7 @@ int testMain(void)
   RUN_TEST(testdecitobin);
   RUN_TEST(testlargestinarray);
   RUN_TEST(testmissing);
+  RUN_TEST(testsmallest);
 
   return UNITY_END();
 }
