@@ -4,7 +4,7 @@
   
 /* Fnction checks if passed strings (str1 and str2) 
    are rotations of each other */
-int Rotations(char *str1, char *str2) 
+int areRotations(char *str1, char *str2) 
 { 
   int size1   = strlen(str1); 
   int size2   = strlen(str2); 
