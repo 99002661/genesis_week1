@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "missingnoinarray.h"
 
-int getMissingNo(int a[], int n)
+int getmissingno(int a[], int n)
 {
     int i, total;
     total = (n + 1) * (n + 2) / 2;

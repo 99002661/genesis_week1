@@ -1,6 +1,6 @@
 #ifndef __LARGESTINARRAY_H_
 #define __LARGESTINARRAY_H_
 
-int largest(int arr[], int n); 
+int largestinarray(int arr[], int n); 
 
 #endif 

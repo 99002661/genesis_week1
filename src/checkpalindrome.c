@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "checkpalindrome.h"
 
-void isPalindrome(char str[]) 
+void checkpalindrome(char str[]) 
 { 
     int l = 0; 
     int h = strlen(str) - 1; 

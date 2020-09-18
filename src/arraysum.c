@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "arraysum.h"
 
-int sum(int arr[], int n) 
+int arraysum(int arr[], int n) 
 { 
     int sum = 0;
     for (int i = 0; i < n; i++) 

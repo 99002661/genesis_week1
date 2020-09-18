@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 #include "checkarmstrong.h"
 
-int checkarmstrong(int num) {
+int checkarmstrong(int num)
+{
    int originalNum, remainder, n = 0, flag;
    double result = 0.0;
 
