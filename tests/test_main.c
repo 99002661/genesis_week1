@@ -12,6 +12,7 @@
 #include "smallestinarray.h"
 int arr_1[] = {1,2,3};
 int arr_2[] = {1,3};
+int arr_3[] = {2,3,6,-10};
 void setUp(){}
 
 void tearDown(){}
@@ -20,12 +21,14 @@ void testarraysum(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(6, arraysum(arr_1,3), "[1,2,3] , 3");
   TEST_ASSERT_EQUAL_MESSAGE(4, arraysum(arr_2,2), "[1,3] , 2");
+  TEST_ASSERT_EQUAL_MESSAGE(1, arraysum(arr_3,4), "[2,3,6,-10] , 4");
 }
+
 //BIN TO DECI//
 void testbintodeci(void)
 {
-  TEST_ASSERT_EQUAL_MESSAGE(255, bintodeci(11111111), "11111111");
-  TEST_ASSERT_EQUAL_MESSAGE(213, bintodeci(11010101), "11010101");
+  TEST_ASSERT_EQUAL_MESSAGE(439, bintodeci(110110111), "110110111");
+  TEST_ASSERT_EQUAL_MESSAGE(134, bintodeci(10000110), "01110010");
 }
 //ARMSTRONG NUMBER//
 void testarmstrong(void)
@@ -38,7 +41,7 @@ void testarmstrong(void)
 //MAGIC NUMBER//
 void testmagic(void)
 {
-  TEST_ASSERT_EQUAL_MESSAGE(0, checkmagic(52), "52");
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkmagic(52), "52");
   TEST_ASSERT_EQUAL_MESSAGE(0, checkmagic(12345), "12345");
 }
 
@@ -47,6 +50,8 @@ void testneon(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(0, checkneon(111), "111");
   TEST_ASSERT_EQUAL_MESSAGE(1, checkneon(9), "9");
+  TEST_ASSERT_EQUAL_MESSAGE(1, checkneon(0), "0");
+  TEST_ASSERT_EQUAL_MESSAGE(-1, checkneon(-9), "-9");
 }
 //PERFECT NUMBER//
 void testperfect(void)

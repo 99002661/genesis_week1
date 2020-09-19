@@ -3,6 +3,13 @@
 
 int checkneon(int num)
 {
+    if (num<0)
+    {
+        return -1;
+    }
+    else
+    {
+      
     int sq;
     sq = num*num;
 
@@ -19,6 +26,8 @@ int checkneon(int num)
     else
     {
         return 0;
+    }
+
     }
     
 }
