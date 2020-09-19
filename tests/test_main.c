@@ -94,7 +94,7 @@ void testsmallest(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(1, smallestinarray(arr_1, 3), "[1,2,3], 3");
   TEST_ASSERT_EQUAL_MESSAGE(-10, smallestinarray(arr_3, 4), "[2,3,6,-10], 4");
-  TEST_ASSERT_EQUAL_MESSAGE(-81, smallestinarray(arr_4, 4), "[-1,-3,-19,-81], 4")
+  TEST_ASSERT_EQUAL_MESSAGE(-81, smallestinarray(arr_4, 4), "[-1,-3,-19,-81], 4");
 }
 
 
