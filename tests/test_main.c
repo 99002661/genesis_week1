@@ -13,6 +13,7 @@
 int arr_1[] = {1,2,3};
 int arr_2[] = {1,3};
 int arr_3[] = {2,3,6,-10};
+int arr_4[] = {-1,-3,-19,-81};
 void setUp(){}
 
 void tearDown(){}
@@ -28,7 +29,7 @@ void testarraysum(void)
 void testbintodeci(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(439, bintodeci(110110111), "110110111");
-  TEST_ASSERT_EQUAL_MESSAGE(134, bintodeci(10000110), "01110010");
+  TEST_ASSERT_EQUAL_MESSAGE(134, bintodeci(00000110), "01110010");
 }
 //ARMSTRONG NUMBER//
 void testarmstrong(void)
@@ -73,13 +74,14 @@ void testprime(void)
 void testdecitobin(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(10001, decitobin(17), "17");
-  TEST_ASSERT_EQUAL_MESSAGE(10011100, decitobin(156), "156");
+  TEST_ASSERT_EQUAL_MESSAGE(0, decitobin(0), "156");
+  TEST_ASSERT_EQUAL_MESSAGE(-10101, decitobin(-21), "156");
 }
 //LARGEST IN ARRAY//
 void testlargestinarray(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(3, largestinarray(arr_1, 3), "[1,2,3], 3");
-  TEST_ASSERT_EQUAL_MESSAGE(3, largestinarray(arr_2, 2), "[1,3], 2");
+  TEST_ASSERT_EQUAL_MESSAGE(6, largestinarray(arr_3, 4), "[2,3,6,-10], 4");
 }
 //MISSING IN ARRAY//
 void testmissing(void)
@@ -91,7 +93,8 @@ void testmissing(void)
 void testsmallest(void)
 {
   TEST_ASSERT_EQUAL_MESSAGE(1, smallestinarray(arr_1, 3), "[1,2,3], 3");
-  TEST_ASSERT_EQUAL_MESSAGE(1, smallestinarray(arr_2, 2), "[1,3], 2");
+  TEST_ASSERT_EQUAL_MESSAGE(-10, smallestinarray(arr_3, 4), "[2,3,6,-10], 4");
+  TEST_ASSERT_EQUAL_MESSAGE(-81, smallestinarray(arr_4, 4), "[-1,-3,-19,-81], 4")
 }
 
 
